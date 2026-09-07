@@ -18,8 +18,8 @@ Write a Java program to reverse a given string.
  ```py
 
 Program to implement a Strings and Math Function using Java
-Developed by: bala murugan s
-RegisterNumber: 212223230027
+Developed by: THEJESWARAN M 
+RegisterNumber: 212223240168
 
 ```
 
@@ -43,8 +43,8 @@ public class Main{
 ```
 
 ## OUTPUT:
-Thus, the program has been implemented and executed successfully.
-
+<img width="782" height="295" alt="image" src="https://github.com/user-attachments/assets/52893e32-955b-429f-8473-66e67696d65b" />
 
 
 ## RESULT:
+Thus, the program has been implemented and executed successfully.
