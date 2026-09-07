@@ -1,65 +1,70 @@
 # Ex.No:3(E) INNER CLASS
 
 ## QUESTION:
-Write a Java program to check if a number is an Armstrong number using Math.pow() and the Integer wrapper class. Take input from the user.
+Write a Java program to create an inner class and access it from the outer class.
 
 ## AIM:
-To write a Java program to check whether a number is an Armstrong number using Math.pow() and the Integer wrapper class with user input.
+To demonstrate accessing an inner class from an outer class in Java.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Read a number from the user using Scanner.
-4. Convert the number to Integer (wrapper class) and count the number of digits.
-5. Extract each digit, raise it to the power of total digits using Math.pow(), and find the sum.
-6. Compare the sum with the original number; if equal, it is an Armstrong number, else not. Stop the program.
+1.	Create an outer class with a private variable.
+2.	Define an inner class inside it with a method to access the outer variable.
+3.	In main(), create an object of the outer class.
+4.	Use it to create an object of the inner class.
+5.	Call the inner class method.
 
 ## PROGRAM:
  ```
-/*
+
 Program to implement a InnerClass using Java
 Developed by: THEJESWARAN M
 RegisterNumber: 212223240168
-*/
+
 ```
 
 ## SOURCE CODE:
+```java
+import java.util.Scanner;
 
-```py
-import java.util.*;
+class OuterClass {
+    String name;
+
+    OuterClass(String name) {
+        this.name = name;
+    }
+
+    void display() {
+        InnerClass inner = new InnerClass();
+        inner.showMessage();
+    }
+
+    class InnerClass {
+        void showMessage() {
+            System.out.println("Hello, " + name + "! This message is from the Inner Class.");
+        }
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("");
+        String input = scanner.next();
+        scanner.close();
 
-        Scanner sc = new Scanner(System.in);
-
-        int num = sc.nextInt();
-        int temp = num;
-        int sum = 0;
-
-        // using Integer wrapper class
-        int digits = Integer.toString(num).length();
-
-        while(temp > 0) {
-            int digit = temp % 10;
-            sum += Math.pow(digit, digits);
-            temp /= 10;
-        }
-
-        if(sum == num)
-            System.out.println(num + " is an Armstrong number.");
-        else
-            System.out.println(num + " is not an Armstrong number.");
-
-        sc.close();
+        OuterClass outer = new OuterClass(input);
+        outer.display();
     }
 }
 ```
 
 ## OUTPUT:
-
-<img width="908" height="258" alt="image" src="https://github.com/user-attachments/assets/ba1ca907-efc6-41f8-8db4-da98ee12d581" />
-
+<img width="1223" height="347" alt="image" src="https://github.com/user-attachments/assets/3a4a3b07-7cc7-4e68-877e-4bb04d3aab6d" />
 
 ## RESULT:
-Thus the program has been implemented and executed successfully.
+The program successfully accesses and prints data from the inner class using the outer class.
+
+
+
+
+
