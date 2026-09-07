@@ -4,7 +4,7 @@
 Write a Java program to reverse a given string.
 
 ## AIM:
-Write a Java program to reverse a given string.
+To Write a Java program to reverse a given string.
 
 ## ALGORITHM :
 1.	Start the program.
