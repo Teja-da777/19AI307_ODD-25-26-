@@ -3,11 +3,13 @@
 ## QUESTION:
 Write a Java program that: Accepts two integer numbers from the user.
 Demonstrates all 5 arithmetic operations:
+```
 Addition (+)
 Subtraction (-)
 Multiplication (*)
 Division (/)
 Modulus (%)
+```
 Displays the result of each operation in a separate line with a clear message.
 
 
