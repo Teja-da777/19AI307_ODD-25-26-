@@ -20,8 +20,8 @@ To create a superclass Person with fields name and age, and a subclass Student t
  ```
 /*
 Program to implement a Inheritance and Aggregation using Java
-Developed by: bala murugan s
-RegisterNumber:  212223230027
+Developed by: THEJESWARAN M
+RegisterNumber: 212223240168
 */
 ```
 
